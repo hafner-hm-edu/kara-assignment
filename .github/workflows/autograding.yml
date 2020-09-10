@@ -1,0 +1,17 @@
+name: 'Autograding'
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Java CI with Maven
+        uses: TobiMichael96/github-actions-autograding@1.0.0
+        with:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
