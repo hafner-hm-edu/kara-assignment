@@ -18,3 +18,4 @@ jobs:
         with:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
           HEAD_SHA: ${{github.event.pull_request.head.sha}}
+          CONFIG: '{"analysis":{"maxScore":100,"errorImpact":-5,"highImpact":-3,"normalImpact":-2,"lowImpact":-1}, "tests":{"maxScore":100,"failureImpact":-5,"skippedImpact":-5}}'
