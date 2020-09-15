@@ -3,7 +3,7 @@
   <component name="CompilerConfiguration">
     <option name="DEFAULT_COMPILER" value="error-prone" />
     <annotationProcessing>
-      <profile name="Annotation profile for Java project that tests GreenfootKara programs" enabled="true">
+      <profile name="Annotation profile for autograding-github-action" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -100,7 +100,8 @@
           <entry name="$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar" />
           <entry name="$MAVEN_REPOSITORY$/NullAway/test-library-models/unspecified/test-library-models-unspecified.jar" />
         </processorPath>
-        <module name="codingstyle" />
+        <module name="github-actions-autograding" />
+        <module name="karatest" />
         <module name="kara-assignment" />
       </profile>
     </annotationProcessing>
@@ -112,6 +113,7 @@
   <component name="ErrorProneCompilerSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="codingstyle" options="-Xlint:all -XepExcludedPaths:.*/generated-test-sources/.* -XepAllDisabledChecksAsWarnings -XepIgnoreUnknownCheckNames -XepDisableWarningsInGeneratedCode -XepAllErrorsAsWarnings -Xep:NullAway:WARN -XepOpt:NullAway:AnnotatedPackages=edu.hm.hafner -Xep:ReturnMissingNullable:OFF -Xep:PreferJavaTimeOverload:OFF -Xep:EqualsGetClass:OFF -Xep:AndroidJdkLibsChecker:OFF -Xep:Java7ApiChecker:OFF -Xep:Var:OFF -Xep:PrivateConstructorForUtilityClass:OFF -Xep:MethodCanBeStatic:OFF -Xep:WildcardImport:OFF -Xep:ThrowsUncheckedException:OFF -Xep:NullableDereference:OFF" />
+      <module name="github-actions-autograding" options="-Xlint:all -XepExcludedPaths:.*/generated-test-sources/.* -XepAllDisabledChecksAsWarnings -XepIgnoreUnknownCheckNames -XepDisableWarningsInGeneratedCode -XepAllErrorsAsWarnings -Xep:NullAway:WARN -XepOpt:NullAway:AnnotatedPackages=edu.hm.hafner -Xep:ReturnMissingNullable:OFF -Xep:PreferJavaTimeOverload:OFF -Xep:EqualsGetClass:OFF -Xep:AndroidJdkLibsChecker:OFF -Xep:Java7ApiChecker:OFF -Xep:Var:OFF -Xep:PrivateConstructorForUtilityClass:OFF -Xep:MethodCanBeStatic:OFF -Xep:WildcardImport:OFF -Xep:ThrowsUncheckedException:OFF -Xep:NullableDereference:OFF" />
       <module name="kara-assignment" options="-Xlint:all -XepExcludedPaths:.*/generated-test-sources/.* -XepAllDisabledChecksAsWarnings -XepIgnoreUnknownCheckNames -XepDisableWarningsInGeneratedCode -XepAllErrorsAsWarnings -Xep:NullAway:WARN -XepOpt:NullAway:AnnotatedPackages=edu.hm.hafner -Xep:ReturnMissingNullable:OFF -Xep:PreferJavaTimeOverload:OFF -Xep:EqualsGetClass:OFF -Xep:AndroidJdkLibsChecker:OFF -Xep:Java7ApiChecker:OFF -Xep:Var:OFF -Xep:PrivateConstructorForUtilityClass:OFF -Xep:MethodCanBeStatic:OFF -Xep:WildcardImport:OFF -Xep:ThrowsUncheckedException:OFF -Xep:NullableDereference:OFF" />
     </option>
   </component>

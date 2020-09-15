@@ -1,4 +1,4 @@
-name: 'Autograding'
+name: 'Build and autograde'
 
 on:
   push:
@@ -7,11 +7,14 @@ on:
   pull_request:
 
 jobs:
-  build:
+  Build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Java CI with Maven
-        uses: TobiMichael96/github-actions-autograding@1.0.0
+      - name: Maven Build
+        run: mvn -V -ntp clean verify -Dmaven.test.failure.ignore=true --file pom.xml
+      - name: Autograding
+        uses: uhafner/autograding-github-action@v0.4.0
         with:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          HEAD_SHA: ${{github.event.pull_request.head.sha}}

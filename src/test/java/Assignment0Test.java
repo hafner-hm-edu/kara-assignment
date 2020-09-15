@@ -1,8 +1,8 @@
 import org.junit.jupiter.api.Test;
 
 /**
- * Verifies that the solution for the example assignment works as expected. I.e., the program
- * draws diamonds in different worlds.
+ * Verifies that the solution for the example assignment works as expected. I.e., the program draws diamonds in
+ * different worlds.
  *
  * @author Ullrich Hafner
  */
@@ -19,7 +19,7 @@ public class Assignment0Test extends AbstractKaraTest {
                         ".....",
                         " ... ",
                         "  .  ",
-                 });
+                });
     }
 
     /**
@@ -32,7 +32,7 @@ public class Assignment0Test extends AbstractKaraTest {
                         " . ",
                         "...",
                         " . ",
-                 });
+                });
     }
 
     /**
@@ -51,7 +51,7 @@ public class Assignment0Test extends AbstractKaraTest {
                         "  .....  ",
                         "   ...   ",
                         "    .    ",
-                 });
+                });
     }
 
     @Override
