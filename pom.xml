@@ -85,7 +85,7 @@
         <artifactId>maven-checkstyle-plugin</artifactId>
         <configuration>
           <sourceDirectories>
-            <sourceDirectory>${project.build.directory}/copied-assignments</sourceDirectory>
+            <sourceDirectory>${project.build.directory}/scenarios</sourceDirectory>
           </sourceDirectories>
           <excludes>**/Assignment*Test.java</excludes>
         </configuration>
@@ -108,7 +108,7 @@
               <goal>copy-resources</goal>
             </goals>
             <configuration>
-              <outputDirectory>${project.build.directory}/copied-assignments</outputDirectory>
+              <outputDirectory>${project.build.directory}/scenarios</outputDirectory>
               <resources>
                 <resource>
                   <directory>scenarios</directory>
