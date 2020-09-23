@@ -143,7 +143,7 @@
             </goals>
             <configuration>
               <sources>
-                <source>${project.build.directory}/copied-assignments</source>
+                <source>${project.build.directory}/scenarios</source>
               </sources>
             </configuration>
           </execution>
