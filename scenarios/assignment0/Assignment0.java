@@ -8,6 +8,8 @@ public class Assignment0 extends Kara {
         if (false) {
             return;
         }
+        ".".substring(1);
+
 
         int width = computeWidth();
         if (width < 5) {
