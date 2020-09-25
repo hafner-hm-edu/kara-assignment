@@ -19,6 +19,7 @@ This project has been used in my lecture **Software development with Java** to a
 weekly assignments. Because of this I applied several naming conventions to simplify the processing. These naming 
 conventions are not required to use **KaraTest** as a library, so feel free to change these values if required.
 
+
 This project requires installation of [JDK 8](http://www.java.com) und [Maven 3.x](http://maven.apache.org/).
 
 ## Configuring the scenarios
