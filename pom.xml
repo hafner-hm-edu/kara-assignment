@@ -124,6 +124,11 @@
       <artifactId>error_prone_annotations</artifactId>
       <version>${error-prone.version}</version>
     </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-nop</artifactId>
+      <version>1.7.30</version>
+    </dependency>
 
     <!-- Test Dependencies -->
     <dependency>
@@ -362,6 +367,7 @@
           <fork>true</fork>
           <excludeFilterFile>spotbugs-exclusion-filter.xml</excludeFilterFile>
           <includeTests>true</includeTests>
+          <addSourceDirs>true</addSourceDirs>
           <plugins>
             <plugin>
               <groupId>com.h3xstream.findsecbugs</groupId>
