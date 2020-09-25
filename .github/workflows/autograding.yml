@@ -8,13 +8,15 @@ on:
 
 jobs:
   Build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v2
       - name: Maven Build
         run: mvn -V -ntp clean verify -Dmaven.test.failure.ignore=true --file pom.xml
       - name: Autograding
-        uses: uhafner/autograding-github-action@v0.4.0
+        uses: uhafner/autograding-github-action@v0.7.1
         with:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
           HEAD_SHA: ${{github.event.pull_request.head.sha}}
+          FILES_PREFIX: 'target/'
+          CONFIG: '{"analysis":{"maxScore":100,"errorImpact":-5,"highImpact":-3,"normalImpact":-2,"lowImpact":-1}, "tests":{"maxScore":100,"failureImpact":-5,"skippedImpact":-5}}'

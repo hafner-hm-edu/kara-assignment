@@ -4,11 +4,18 @@
  * @author Ullrich Hafner
  */
 public class Assignment0 extends Kara {
-    /**
-     * Draws a diamond into a square world of size 2n + 1 x 2n +1.
-     */
     public void act() {
+        if (false) {
+            return;
+        }
+        ".".substring(1);
+
+
         int width = computeWidth();
+        if (width < 5) {
+            return;
+        }
+
         int half = width / 2;
 
         for (int line = 0; line < width; line++) {
