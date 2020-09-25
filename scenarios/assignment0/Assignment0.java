@@ -5,17 +5,7 @@
  */
 public class Assignment0 extends Kara {
     public void act() {
-        if (false) {
-            return;
-        }
-        ".".substring(1);
-
-
         int width = computeWidth();
-        if (width < 5) {
-            return;
-        }
-
         int half = width / 2;
 
         for (int line = 0; line < width; line++) {
