@@ -23,13 +23,6 @@ conventions are not required to use **KaraTest** as a library, so feel free to c
 This project requires installation of [JDK 8](http://www.java.com) und [Maven 3.x](http://maven.apache.org/).
 
 
-## Creating the tests 
-
-The tests of a scenario use the typical [JUnit](http://junit.org/) naming conventions and are named 
-Assignment1Test.java, Assignment2Test.java, etc. For each assignment multiple tests could be specified
-using a `public void` method with an `@Test` annotation. In order to get these tests automatically evaluated, they 
-must follow the Maven conventions and must be copied to the folder [src/test/java](../master/src/test/java). Tests 
-(as well as the actual assignments) are located in the default package. The tests are not part of a scenario folder.
  
 ## Example scenario
  
