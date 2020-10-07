@@ -22,14 +22,6 @@ conventions are not required to use **KaraTest** as a library, so feel free to c
 
 This project requires installation of [JDK 8](http://www.java.com) und [Maven 3.x](http://maven.apache.org/).
 
-## Configuring the scenarios
-
-**KaraTest** basically uses the same input files as Greenfoot, i.e. it is based on scenarios. Rather then always using 
-the class `MyKara` to develop the solution for a scenario the classes `Assignment1`, `Assignment2`, etc. are used.  In 
-order to test a scenario you need a corresponding GreenfootKara scenario with such an assignment class. These 
-scenarios must be located in the folder `scenarios`. They follow the naming convention assignment1, assignment2, etc.
-Scenarios are independent of each other, i.e. you can copy these folders to or from any place you
-like in order to prepare the installation.
 
 ## Creating the tests 
 
